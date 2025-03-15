@@ -1,30 +1,25 @@
 <template>
   <div id="app">
-    <PathfindingVisualizer />
+    <router-view></router-view>
+    <!-- This should now work -->
   </div>
 </template>
 
 <script>
-import PathfindingVisualizer from './components/PathfindingVisualizer.vue'
-
 export default {
-  name: 'App',
-  components: {
-    PathfindingVisualizer
-  }
-}
+  name: "App",
+};
 </script>
 
 <style lang="scss">
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 #app {
-	// background: blueviolet;
-	min-height: 100vh;
+  min-height: 100vh;
 }
 </style>

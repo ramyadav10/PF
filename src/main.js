@@ -1,12 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
-import AppButton from '@/components/UI/AppButton.vue';
+import "./registerServiceWorker";
 
-Vue.component('Button', AppButton);
+import App from "./App.vue";
+import AppButton from "@/components/UI/AppButton.vue";
+import Vue from "vue";
+import router from "./router"; // Import router
 
-Vue.config.productionTip = false
+
+
+
+Vue.component("Button", AppButton);
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router, // Register Vue Router
+  render: (h) => h(App),
+}).$mount("#app");
